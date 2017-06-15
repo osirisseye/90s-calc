@@ -1,0 +1,127 @@
+body {
+  background-color: rgb(30,30,30);
+  font-family: 'Orbitron', sans-serif;
+	font-size: 1.1em;
+	
+	}
+
+#scr {
+	border-bottom: solid 1px;
+  
+  
+  color: white;
+  
+}
+.wrapper {
+  max-width: 180px;
+  margin: 50px auto;
+  padding: 3px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap:2px;
+  grid-auto-rows:minmax(30px, auto);
+  background-color: rgb(80,80,80);
+  border: solid 3px;
+}
+.wrapper * {
+  height:100%;
+  width:100%;
+  display: flex;
+  alight-items:center;
+  justify-content: center;
+}
+
+button {
+  font-family: 'Orbitron', sans-serif;
+  background-color:#DFD8D0;
+  border-radius:4px;
+}
+
+#scr {
+  grid-column:1/5;
+  grid-row:1;
+  color: lightgrey;
+  
+}
+#eq {
+  grid-column:1/5;
+  grid-row:2;
+  color: grey;
+  
+}
+
+
+.one{
+	grid-column: 1;
+	grid-row: 6;
+}
+.two{
+	grid-column: 2;
+	grid-row: 6;
+}
+.three{
+	grid-column: 3;
+	grid-row: 6;
+}
+.four{
+	grid-column: 1;
+	grid-row: 5;
+}
+.five{
+	grid-column: 2;
+	grid-row: 5;
+}
+.six{
+	grid-column: 3;
+	grid-row: 5;
+}
+.seven{
+	grid-column: 1;
+	grid-row: 4;
+}
+.eight{
+	grid-column: 2;
+	grid-row: 4;
+}
+.nine{
+	grid-column: 3;
+	grid-row: 4;
+}
+.zero{
+	grid-column: 1 / 3;
+	grid-row: 7;
+}
+.decimal{
+	grid-column: 3;
+	grid-row: 7;
+}
+.equals{
+	grid-column: 4;
+	grid-row: 5 / 8;
+}
+.add{
+	grid-column: 4;
+	grid-row: 3;
+}
+.subtract{
+	grid-column: 4;
+	grid-row: 4;
+}
+.multiply{
+	grid-column: 2;
+	grid-row: 3;
+}
+.divide{
+	grid-column: 3;
+	grid-row: 3;
+}
+.clear{
+	grid-column: 1;
+	grid-row: 3;
+}
+
+
+footer {
+  text-align: center;
+  color: grey;
+}
