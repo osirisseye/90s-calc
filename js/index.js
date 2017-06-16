@@ -89,7 +89,8 @@ window.onload = function() {
   $("#20").on("click", function() {
     var result = 0;
     var equation2 = equation1.replace(/\++/g ,'+').replace(/\--/g ,'-').replace('//','/').replace('**','*').replace('..','.');
-    result = eval(equation2);
+    var preresult = eval(equation2);
+    result = preresult.toFixed(2);
     equation1= result;
     document.getElementById("scr").innerHTML = result;
     document.getElementById("eq").innerHTML = equation1;
